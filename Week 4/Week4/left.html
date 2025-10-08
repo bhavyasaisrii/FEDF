@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Online Store</title>
+<style>
+body{font-family:Arial;margin:0;background:#f0f8ff}
+header,footer{background:#4682b4;color:#fff;text-align:center;padding:15px}
+nav{position:fixed;top:0;width:100%;background:#333;padding:10px 0;z-index:1000;text-align:center}
+nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
+nav a:hover{text-decoration:underline}
+.slideshow{margin-top:70px;height:300px;overflow:hidden;position:relative}
+.slide{position:absolute;width:100%;height:100%;opacity:0;animation:fade 16s infinite}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slide:nth-child(1){animation-delay:0s}
+.slide:nth-child(2){animation-delay:4s}
+.slide:nth-child(3){animation-delay:8s}
+.slide:nth-child(4){animation-delay:12s}
+@keyframes fade{0%,30%,100%{opacity:0}5%,25%{opacity:1}}
+section{padding:20px;margin:20px;background:#e0ffff;border:1px solid #ccc;border-radius:5px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#laptops">Laptops</a>
+  <a href="#mobiles">Mobiles</a>
+  <a href="#routers">Routers</a>
+  <a href="#pendrives">Pendrives</a>
+</nav>
+
+<header><h1>List of Products</h1></header>
+
+<div class="slideshow">
+  <div class="slide"><img src="laptop.jpg" alt="Laptops"></div>
+  <div class="slide"><img src="mobile.jpg" alt="Mobiles"></div>
+  <div class="slide"><img src="wifirouter.jpg" alt="WiFi Routers"></div>
+  <div class="slide"><img src="pendrive.jpg" alt="Pendrives"></div>
+</div>
+
+<section id="laptops"><a href="laptops.html">Laptops</a><p>Latest and top-performing laptops in India.</p></section>
+<section id="mobiles"><a href="mobiles.html">Mobiles</a><p>Best mobile phones in the market.</p></section>
+<section id="routers"><a href="wifirouters.html">WiFi Routers</a><p>High-speed WiFi routers.</p></section>
+<section id="pendrives"><a href="pendrives.html">Pendrives</a><p>Affordable and reliable USB drives.</p></section>
+
+<footer>&copy; 2025 Online Product Store | Contact: drysubbarayudu@gmail.com</footer>
+
+</body>
+</html>
